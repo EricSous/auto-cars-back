@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Getter
 @Setter
@@ -20,4 +21,13 @@ public class UsuarioEntity {
 
   @Column(name = "senha", nullable = false)
   private String senha;
+
+  @Column(name = "nome")
+  private String nome;
+
+  @Column(name = "email")
+  private String email;
+
+  @OneToMany(mappedBy = "vendedor")
+  private List<ProdutoEntity> produtos;
 }

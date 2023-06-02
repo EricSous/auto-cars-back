@@ -33,4 +33,8 @@ public class ProdutoEntity {
 
   @Column(name = "imagem", columnDefinition = "BLOB")
   private byte[] file;
+
+  @ManyToOne
+  @JoinColumn(name = "usuario_id")
+  private UsuarioEntity vendedor;
 }
