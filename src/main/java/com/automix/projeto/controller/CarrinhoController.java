@@ -39,6 +39,7 @@ public class CarrinhoController {
       String imagemBase64 = Base64.getEncoder().encodeToString(imagemBytes);
 
       ProdutoFileDto produtoResponse = new ProdutoFileDto();
+      produtoResponse.setId(produtoEntity.getId());
       produtoResponse.setMarca(produtoEntity.getMarca());
       produtoResponse.setModelo(produtoEntity.getModelo());
       produtoResponse.setAno(produtoEntity.getAno());
