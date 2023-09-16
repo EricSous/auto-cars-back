@@ -26,7 +26,7 @@ public class ProdutoEntity {
   private String ano;
 
   @Column(name = "preco")
-  private Long preco;
+  private Double preco;
 
   @Column(name = "descricao")
   private String descricao;

@@ -132,4 +132,7 @@
     <orderEntry type="library" name="Maven: commons-fileupload:commons-fileupload:1.4" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.2" level="project" />
   </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="fb07e46c-d2f6-4a19-ad8d-d2361094704a" />
+  </component>
 </module>

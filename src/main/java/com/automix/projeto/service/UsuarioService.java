@@ -1,6 +1,5 @@
 package com.automix.projeto.service;
 
-import com.automix.projeto.dto.UsuarioDto;
 import com.automix.projeto.dto.UsuarioEditDto;
 import com.automix.projeto.entity.UsuarioEntity;
 import com.automix.projeto.repository.UsuarioRepository;
@@ -9,8 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class UsuarioService {

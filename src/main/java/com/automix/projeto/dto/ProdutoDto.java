@@ -17,7 +17,7 @@ public class ProdutoDto {
   private String marca;
   private String modelo;
   private String ano;
-  private Long preco;
+  private Double preco;
   private String descricao;
   private MultipartFile file;
 

@@ -34,10 +34,9 @@ public class UsuarioController {
     return new ResponseEntity<>(HttpStatus.NO_CONTENT);
   }
 
-  @GetMapping("/usuarios/{login}/{senha}")
-  public ResponseEntity<UsuarioEntity> obterUsuarioPorLoginESenha(@PathVariable String login,
-                                                                  @PathVariable String senha) {
-    return usuarioService.obterUsuario(login, senha);
+  @PostMapping("/login")
+  public ResponseEntity<UsuarioEntity> obterUsuarioPorLoginESenha(@RequestBody UsuarioDto usuarioDto) {
+    return usuarioService.obterUsuario(usuarioDto.getLogin(), usuarioDto.getSenha());
   }
 
   @DeleteMapping("/usuarios/{id}")
